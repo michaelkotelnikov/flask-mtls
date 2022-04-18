@@ -25,6 +25,8 @@ To run the Flask server, run the next commands -
 ```
 $ git clone https://github.com/michaelkotelnikov/flask-mtls.git
 
+$ cd flask-mtls/
+
 $ ./server.py
 ```
 
@@ -35,6 +37,8 @@ The Flask server will use the certificates in the GitHub repository automaticall
 To run the client that authenticates against the secured Flask web server, run the next commands -
 ```
 $ git clone https://github.com/michaelkotelnikov/flask-mtls.git
+
+$ cd flask-mtls/
 
 $ ./client.py
 Hello Cloudlet
