@@ -54,7 +54,7 @@ ssl_context.verify_mode = ssl.CERT_REQUIRED
 @app.route('/')
 def hello_world():
     #print(request.environ['peercert'])
-    return render_template('helloworld.html', client_cert=request.environ['peercert'])
+    return render_template('hellocloudlet.html', client_cert=request.environ['peercert'])
 # start our webserver!
 if __name__ == "__main__":
     app.run( ssl_context=ssl_context, request_handler=PeerCertWSGIRequestHandler )
